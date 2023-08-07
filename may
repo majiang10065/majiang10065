@@ -1,0 +1,11 @@
+# You may select to filter the messages by event. 
+# See the javadoc for javax.jms.Message for more 
+# information on selectors.See the CDS Customization 
+# Guide for a list of possible events. 
+#selector="JMSCorrelationID=download_initiated" 
+ 
+# Directory Constants 
+DEPL_DIR="${CDS_HOME}/deployment/${CDS_DEPL_NAME}" 
+CONF_DIR="${DEPL_DIR}/conf" 
+LIB_DIR="${DEPL_DIR}/lib" 
+CDSLIB_DIR="${LIB_DIR}/cdslib" 
