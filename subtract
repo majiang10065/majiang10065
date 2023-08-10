@@ -1,0 +1,5 @@
+def subtract(a, b):
+    return a - b
+ 
+ 
+print((subtract(a=1, b=3)))  # -2
