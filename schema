@@ -1,0 +1,9 @@
+ table_schema = conn.createTable( "InvoiceItem" );
+        table_schema.createColumn( "inv_no", Domain.INTEGER );
+        table_schema.createColumn( "item_no", Domain.INTEGER );
+        table_schema.createColumn( "prod_no", Domain.INTEGER );
+        table_schema.createColumn( "quantity", Domain.INTEGER );
+        table_schema.createColumn( "price", Domain.NUMERIC, 9, (short)2 );
+        index_schema = table_schema.createPrimaryIndex( "prime_keys" );
+        index_schema.addColumn( "inv_no", IndexSchema.ASCENDING );
+        index_schema.addColumn( "item_no", IndexSchema.ASCENDING );
